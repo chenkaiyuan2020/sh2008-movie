@@ -8,11 +8,11 @@
                         class="avator-icon"
                     />
                     <img v-if="userInfo.userId"
-                     :src="userInfo.headIcon"
-                     class="avator-icon"
-                     />
-                     <div v-if="userInfo.userId" class="nick-name" @click="login()">{{userInfo.mobile}}</div>
-                    <div  v-if="!userInfo.userId" class="nick-name" @click="login()">立即登录</div>
+                        :src="userInfo.headIcon"
+                        class="avator-icon"
+                    />
+                    <div v-if="userInfo.userId" class="nick-name" @click="login()">{{userInfo.mobile}}</div>
+                    <div v-if="!userInfo.userId" class="nick-name" @click="login()">立即登录</div>
                 </div>
                 <ul class="my-order-tab">
                     <li>
@@ -153,6 +153,7 @@ export default {
     background: #f4f4f4;
     margin-bottom: 59px;
 }
+
 .center-view .avatar {
     text-align: center;
     margin-top: -44px;
@@ -169,6 +170,7 @@ export default {
     align-items: center;
     color: #fff;
 }
+
 .center-view .avatar .avator-icon {
     width: 63px;
     height: 63px;
@@ -176,9 +178,11 @@ export default {
     margin-right: 20px;
     border: 2px solid #fff;
 }
+
 .center-view .avatar .nick-name {
     font-size: 16px;
 }
+
 .center-view .my-order-tab {
     width: 100%;
     margin: 0 auto;
@@ -195,6 +199,7 @@ export default {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .center-view .my-order-tab li {
     position: relative;
     -webkit-box-flex: 1;
@@ -202,32 +207,39 @@ export default {
     flex: 1;
     list-style: none;
 }
+
 .center-view .my-order-tab li i {
     font-size: 32px;
     font-weight: 100;
     color: #5e5f60;
 }
+
 .center-view .my-order-tab li .left-border {
     height: 49px;
     position: absolute;
     right: -5px;
     bottom: 15px;
 }
+
 .center-view .my-order-tab li .common-p {
     color: #797d82;
 }
+
 .center-view .my-order-tab li .icon-dingdan-daifahuo {
     font-size: 34px;
     position: relative;
     bottom: 2px;
 }
+
 .center-view .my-order-tab li .icon-icon_shouhoutuikuan {
     font-size: 30px;
     line-height: 48px;
 }
+
 .center-view .my-order-tab li .dai-fahuo {
     margin-top: -8px;
 }
+
 .center-view .my-order-tab .mint-badge {
     padding: 0;
     font-size: 10px;
@@ -240,12 +252,15 @@ export default {
     text-align: center;
     top: 0;
 }
+
 .center-view .my-order-tab .badge-padding {
     padding: 0 6px;
 }
+
 .center-view .reset-tab-margin {
     margin-bottom: 0;
 }
+
 .center-view .margin-set {
     background: #fff;
     padding: 0 15px;
@@ -257,6 +272,7 @@ export default {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .center-view .margin-set .label {
     margin-left: 15px;
     color: #191a1b;
@@ -264,28 +280,34 @@ export default {
     -ms-flex: 1;
     flex: 1;
 }
+
 .center-view .margin-set .arrow {
     text-align: right;
     width: 6px;
     height: 10px;
 }
+
 .center-view .margin-set .system-set {
     margin-bottom: 50px;
 }
+
 .center-view .my-balance,
 .center-view .my-card {
     position: relative;
 }
+
 .center-view .my-balance .value,
 .center-view .my-card .value {
     text-align: right;
     color: #797d82;
     padding-right: 14px;
 }
+
 .center-view .my-balance .value .price-decimal,
 .center-view .my-card .value .price-decimal {
     color: #797d82;
 }
+
 .center-view .my-balance:after,
 .center-view .my-card:after {
     content: " ";
@@ -310,10 +332,12 @@ export default {
     height: 0 !important;
     display: inline-table !important;
 }
+
 .price-fmt,
 .price-fmt span {
     float: none !important;
 }
+
 .price-fmt i {
     font-size: 11px;
     font-style: normal;
